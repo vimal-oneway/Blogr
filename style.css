@@ -1,0 +1,730 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+@media only screen and (min-width: 1200px) {
+  .introbg {
+    height: 50vh;
+    background: url(./images/bg-pattern-intro-desktop.svg),
+      linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-size: cover;
+    padding: 25px 10%;
+    border-radius: 0 0 0 48px;
+  }
+
+  /* logo of Blog */
+  .blog {
+    display: inline-flex;
+    align-items: center;
+    height: 15vh;
+    padding-bottom: 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .login {
+    display: block;
+  }
+
+  .slide {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    width: 90%;
+    margin-top: -15vh;
+    margin-left: 75px;
+  }
+
+  /* navigation list */
+  .navlist {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+  }
+
+  /* nav container  */
+  .navlist section {
+    margin: 0 30px;
+  }
+
+  /* heading of nav */
+  .proHead,
+  .comHead,
+  .conHead {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Ubuntu";
+    color: hsl(240, 2%, 79%);
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .proHead:hover,
+  .comHead:hover,
+  .conHead:hover {
+    text-decoration: underline;
+  }
+
+  /* arrow icon  */
+  .arrowlight1 {
+    margin-left: 10px;
+    height: 8px;
+    margin-top: 3px;
+    position: relative;
+    display: block;
+  }
+
+  .arrowdark {
+    display: none;
+  }
+
+  /* container of li's */
+  .navProduct,
+  .navCompany,
+  .navConnect {
+    display: none;
+    position: absolute;
+    width: 150px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+      100px 100px 80px rgba(0, 0, 0, 0.07);
+  }
+  /* 
+  .Product:hover .navProduct,
+  .company:hover .navCompany,
+  .connect:hover .navConnect {
+    display: block;
+  } */
+
+  .nav a {
+    color: hsl(207, 13%, 34%);
+    font-weight: 400;
+    font-family: "Ubuntu";
+  }
+  .nav a:hover {
+    font-weight: 500;
+    color: hsl(240, 10%, 16%);
+  }
+
+  .navProduct li,
+  .navCompany li,
+  .navConnect li {
+    padding: 10px;
+  }
+
+  .login {
+    margin-bottom: 20px;
+  }
+
+  #loginBtn {
+    background-color: transparent;
+    border: none;
+    padding: 0 25px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Ubuntu";
+    font-weight: 500;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    flex-direction: column;
+    clear: both;
+  }
+  .startBtn {
+    padding: 8px 16px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+    border: none;
+    border-radius: 15px;
+    font-family: "Ubuntu";
+    font-weight: 700;
+  }
+
+  .startBtn:hover {
+    background-color: hsl(13, 100%, 72%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s all ease-in-out;
+  }
+
+  #learnBtn {
+    color: hsl(0, 0%, 100%);
+    background-color: transparent;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 8px 16px;
+    margin-left: 16px;
+  }
+
+  #learnBtn:hover {
+    color: hsl(13, 100%, 72%);
+    background-color: hsl(0, 0%, 100%);
+    transition: 0.5s all ease-in-out;
+  }
+
+  .introText {
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass";
+    text-align: center;
+  }
+
+  .introText h1 {
+    font-size: 3rem;
+  }
+  .introText p {
+    padding: 5px 0;
+    color: hsl(240, 2%, 79%);
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .introBtn {
+    padding: 15px 0;
+  }
+
+  .futureDesign {
+    height: 90vh;
+    width: 100%;
+    margin: 50px 0;
+    background: url(./images/illustration-editor-desktop.svg);
+    background-size: 90vh;
+    background-repeat: no-repeat;
+    background-position-x: 120%;
+    background-position-y: center;
+  }
+
+  .designImg {
+    display: none;
+  }
+
+  .futureDesign h1 {
+    text-align: center;
+    font-family: "Overpass";
+    color: hsl(207, 13%, 34%);
+  }
+
+  .designcon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .futureDesign .para {
+    width: 40%;
+    font-family: "Overpass";
+  }
+
+  .futureDesign .para1,
+  .futureDesign .para2 {
+    margin: 50px 0;
+  }
+
+  .para h2 {
+    font-weight: 600;
+    color: hsl(207, 13%, 34%);
+  }
+
+  .para p {
+    font-weight: 300;
+    font-size: 14px;
+    color: hsl(240, 2%, 79%);
+    margin-top: 10px;
+  }
+
+  .infrastructure {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 350px;
+    background: url(./images/bg-pattern-circles.svg),
+      linear-gradient(45deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-repeat: no-repeat;
+    background-position-x: -90%;
+    background-position-y: 90%;
+    border-radius: 0 50px 0 50px;
+  }
+
+  .infraPara {
+    width: 40%;
+    margin-right: 10%;
+  }
+  .infraPara h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass";
+    font-weight: 600;
+  }
+
+  .infraPara p {
+    font-family: "Overpass";
+    font-weight: 300;
+    color: hsl(240, 2%, 79%);
+    margin-top: 20px;
+  }
+
+  .general {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90vh;
+    width: 90%;
+    margin-right: 10%;
+    background-image: url(./images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 110vh;
+    background-position-y: center;
+    background-position-x: -37%;
+    margin-top: 10vh;
+  }
+
+  .genImg {
+    display: none;
+  }
+
+  .genPara {
+    font-family: "Ubuntu";
+    width: 45%;
+    padding-left: 5%;
+  }
+
+  .genPara h2 {
+    color: hsl(207, 13%, 34%);
+    font-family: 500;
+  }
+
+  .genPara p {
+    color: hsl(240, 2%, 79%);
+    font-weight: 400;
+    margin: 25px 0;
+  }
+
+  .genPara2 {
+    margin-top: 50px;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: hsl(240, 10%, 16%);
+    height: 40vh;
+    padding: 50px 0;
+    border-radius: 0 48px 0 0;
+  }
+
+  .foot h3 {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .foot a {
+    color: hsl(240, 2%, 79%);
+    font-family: "Ubuntu";
+    font-weight: 500;
+  }
+
+  .foot a:hover {
+    text-decoration: underline;
+  }
+
+  .foot ul {
+    margin-top: 20px;
+  }
+
+  .foot li {
+    margin-top: 10px;
+  }
+
+  #mobLogo {
+    display: none;
+  }
+}
+
+/* styles for moblie */
+@media only screen and (max-width: 375px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .introbg {
+    height: 50vh;
+    background: url(./images/bg-pattern-intro-mobile.svg),
+      linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    /* background-color: #000;
+    color: #fff; */
+    background-repeat: no-repeat;
+    background-size: 3000%;
+    padding: 25px 10%;
+    border-radius: 0 0 0 48px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .hamburger img {
+    position: absolute;
+    transition: 1s all ease-in-out;
+  }
+
+  /* position .hamburger  */
+  .navMob {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10%;
+    height: 50px;
+  }
+
+  /* to hide nav bar */
+  .dropdown {
+    display: none;
+    width: 80%;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    position: absolute;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+      100px 100px 80px rgba(0, 0, 0, 0.07);
+    animation: slide 1.3s ease-in-out;
+    overflow-y: hidden;
+  }
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .navProduct,
+  .navCompany,
+  .navConnect {
+    background-color: hsl(240, 2%, 95%);
+    color: black;
+    position: relative;
+    min-width: 80%;
+    margin: 10px auto;
+    padding: 25px 50px;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+  }
+
+  .navlist li {
+    padding: 5px 0;
+  }
+
+  .proHead,
+  .comHead,
+  .conHead {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .navlist p {
+    color: hsl(208, 49%, 24%);
+    font-weight: 600;
+    font-family: "Overpass";
+    font-size: 18px;
+  }
+
+  .navlist img {
+    height: 8px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+  }
+
+  .navlist img:hover {
+    rotate: 90deg;
+  }
+
+  .navlist a {
+    color: hsl(207, 13%, 34%);
+    font-family: "Overpass";
+    font-weight: 300;
+  }
+
+  /* .navlist li:hover ~ */
+  #navBar a:hover {
+    font-weight: 600;
+    color: hsl(240, 10%, 16%);
+  }
+
+  .login {
+    margin-top: 25px;
+    border-top: 1px solid hsl(240, 2%, 79%);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .arrowdark {
+    display: block;
+  }
+
+  .arrowlight1 {
+    display: none;
+  }
+
+  /* aligning the intro part */
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+  }
+
+  /* intro text */
+  .introText {
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass";
+    text-align: center;
+  }
+
+  .introText h1 {
+    font-size: 24px;
+  }
+
+  .introText p {
+    padding: 5px 0;
+    color: hsl(240, 2%, 79%);
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .introBtn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 20px 5%;
+  }
+
+  #signUp {
+    padding: 10px 14px;
+    color: hsl(0, 0%, 100%);
+    background: linear-gradient(45deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border: none;
+    border-radius: 15px;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .startBtn {
+    padding: 5px 8px;
+    color: hsl(353, 100%, 62%);
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 15px;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .startBtn:hover {
+    background-color: hsl(13, 100%, 72%);
+    transition: 0.5s all ease-in-out;
+    color: hsl(0, 0%, 100%);
+  }
+
+  #learnBtn {
+    color: hsl(0, 0%, 100%);
+    background-color: transparent;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 5px 8px;
+    margin-left: 8px;
+  }
+
+  #learnBtn:hover {
+    color: hsl(13, 100%, 72%);
+    background-color: hsl(0, 0%, 100%);
+    transition: 0.5s all ease-in-out;
+  }
+
+  #loginBtn {
+    background-color: transparent;
+    border: none;
+    padding: 20px 25px;
+    color: hsl(240, 10%, 16%);
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .futureDesign {
+    margin: 50px 0 0 10%;
+    font-family: "Overpass";
+    width: 80%;
+    text-align: center;
+  }
+
+  .futureDesign h2 {
+    color: hsl(208, 49%, 24%);
+  }
+
+  .designImg {
+    width: 100%;
+  }
+
+  .designImg img {
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  .designcon h2 {
+    color: hsl(208, 49%, 24%);
+    margin: 20px 0;
+    font-weight: 600;
+  }
+
+  p {
+    color: hsl(207, 13%, 34%);
+    font-weight: 300;
+    font-size: 14px;
+    font-family: "Overpass";
+    text-align: center;
+  }
+
+  .infrastructure {
+    height: 500px;
+    background: url(./images/bg-pattern-circles.svg),
+      linear-gradient(45deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-size: cover;
+    border-radius: 0 50px 0 50px;
+    background-repeat: no-repeat;
+    margin: 150px 0 10px 0;
+  }
+
+  .infraImg {
+    width: 100%;
+    position: absolute;
+    margin-top: -100px;
+  }
+
+  .infraImg img {
+    width: 90%;
+  }
+
+  .infraPara {
+    font-family: "Overpass";
+    padding-top: 200px;
+    width: 80%;
+    padding-left: 10%;
+  }
+
+  .infraPara h1 {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+  }
+
+  .infraPara p {
+    color: hsl(240, 2%, 79%);
+    font-weight: 300;
+    margin: 25px 0 0 0;
+  }
+
+  .general {
+    width: 80%;
+    margin: 10px 10% 10px 10%;
+  }
+
+  .genImg img {
+    width: 100%;
+  }
+
+  .genPara h2 {
+    margin-top: 25px;
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+    font-weight: 600;
+    font-family: "Overpass";
+  }
+
+  .genPara p {
+    margin-top: 18px;
+  }
+
+  .foot {
+    background-color: hsl(240, 10%, 16%);
+    padding: 10% 30%;
+    width: 100%;
+    margin-top: 75px;
+    border-radius: 0 100px 0 0;
+  }
+
+  .foot h3 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass";
+    margin: 32px 0 10px 0;
+    text-align: center;
+  }
+
+  .foot a {
+    color: hsl(240, 2%, 79%);
+  }
+
+  .foot a:hover {
+    text-decoration: underline;
+  }
+
+  .foot li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}

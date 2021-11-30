@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon/png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="introbg introclr">
+        <section class="navLeft">
+          <!-- logo -->
+          <div class="navMob">
+            <div class="blog">
+              <img src="./images/logo.svg" alt="logo" id="pcLogo" />
+            </div>
+            <!-- hamburger -->
+            <div class="hamburger">
+              <img src="./images/icon-hamburger.svg" alt="hamburger" onclick="navOpen()" id="hamburger" />
+              <img src="./images/icon-close.svg" alt="icon-close" onclick="navClose()"
+              id="closeIcon" 
+              style="display: none;"/>
+            </div>
+          </div>
+          <!-- navigation -->
+          <!-- main contianer -->
+          <section class="nav">
+            <!-- div for pc slide -->
+            <!-- contains links loginbtn -->
+            <div class="slide dropdown" id="dropdown">
+              <!-- contains all links -->
+              <div class="navlist" id="navBar">
+                <!-- nav of product -->
+
+                <!-- links of product -->
+                <section class="Product" id="Product">
+                  <div class="proHead" id="proHead" onclick="product()">
+                    <p id="protitle">Product</p>
+                    <div>
+                    <img
+                      src="./images/icon-arrow-light.svg"
+                      alt="arrow"
+                      class="arrowlight1"
+                      id="arrow1"
+                    />
+                    <img
+                      src="./images/icon-arrow-dark.svg"
+                      alt="icon-arrow-dark"
+                      class="arrowdark"
+                      id="arrow2"
+                    
+                    />
+                  </div>
+                  </div>
+                  <div class="navProduct" id="navProduct">
+                    <ul>
+                      <li><a href="#">Overview</a></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Marketplace</a></li>
+                      <li><a href="#">Features</a></li>
+                      <li><a href="#">Integrations</a></li>
+                    </ul>
+                  </div>
+                </section>
+
+                <!-- nav of company -->
+                <section class="company">
+                  <div class="comHead" id="comHead" onclick="company()">
+                    <p id="comtitle">Company</p>
+                    <img
+                      src="./images/icon-arrow-light.svg"
+                      alt="arrow"
+                      class="arrowlight1"
+                      id="arrow3"
+
+                    />
+                    <img
+                      src="./images/icon-arrow-dark.svg"
+                      alt="icon-arrow-dark"
+                      id="arrow4"
+                      class="arrowdark"
+                    />
+                  </div>
+                  <div class="navCompany" id="navCompany">
+                    <ul>
+                      <li><a href="#">About </a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Careers</a></li>
+                    </ul>
+                  </div>
+                </section>
+
+                <!-- nav of connect -->
+                <section class="connect">
+                  <div class="conHead" id="conHead" onclick="connect()">
+                    <p id="contitle">Connect</p>
+                    <img
+                      src="./images/icon-arrow-light.svg"
+                      alt="arrow"
+                      class="arrowlight1"
+                      id="arrow5"
+
+                    />
+                    <img
+                      src="./images/icon-arrow-dark.svg"
+                      alt="icon-arrow-dark"
+                      class="arrowdark"
+                      id="arrow6"
+
+                    />
+                  </div>
+                  <div class="navConnect" id="navConnect">
+                    <ul>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Newsletter</a></li>
+                      <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+
+              <!-- login button on right side -->
+              <section class="login">
+                <button id="loginBtn" >Login</button>
+                <button class="startBtn" id="signUp">Sign up</button>
+              </section>
+            </div>
+          </section>
+          <!-- end of nav -->
+        </section>
+        <!-- intro div  -->
+        <section class="intro">
+          <div class="introText">
+            <h1>A modern publishing platform</h1>
+            <p>Grow your audience and build your online brand</p>
+          </div>
+          <div class="introBtn">
+            <button class="startBtn">Start for Free</button>
+            <button id="learnBtn">Learn More</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Design for the future -->
+      <section class="futureDesign">
+        <h1>Designed for the future</h1>
+        <div class="designImg">
+          <img src="./images/illustration-editor-mobile.svg" alt="for moblie" />
+        </div>
+        <div class="designcon">
+          <section class="para">
+            <div class="para1">
+              <h2>Introducing an extensible editor</h2>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </div>
+            <div class="para2">
+              <h2>Robust content management</h2>
+              <p>
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+        <section class="infrastructure mobilecon">
+          <div class="infraImg">
+            <img
+              src="./images/illustration-phones.svg"
+              alt="illustration-editor-mobile"
+            />
+          </div>
+          <div class="infraPara">
+            <h1>State of the Art Infrastructure</h1>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <section class="general">
+        <div class="genImg">
+          <img src="./images/illustration-laptop-mobile.svg" alt="illustration-editor-mobile">
+        </div>
+        <div class="genPara">
+          <div class="genPara1">
+            <h2>Free, open, simple</h2>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div class="genPara2">
+            <h2>Powerful tooling</h2>
+            <p>
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="foot">
+        <div class="footImg">
+          <img src="./images/logo.svg" alt="Logo" />
+        </div>
+        <div class="footProduct">
+          <h3>Product</h3>
+          <ul>
+            <li>
+              <a href="#">Overview</a>
+            </li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+        <div class="footCompany">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footConnect">
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- end of page for name -->
+    <div class="attribution" style="display: none">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Webie</a>.
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
